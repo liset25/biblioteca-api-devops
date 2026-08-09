@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
+console.log('DATABASE_URL configurada:', !!process.env.DATABASE_URL);
 
 const pool = require('./config/db');
 
